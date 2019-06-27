@@ -16,5 +16,10 @@ This open source project ([see license](LICENSE.txt "The GNU Affero General Publ
       4. Inside File Explorer, __double-click mysql\_webapp\_mvc.sln__ to import the solution (the solution file needs to be opened after a clone). After VS finishes importing the solution, click on __File__ -> __Close Solution__ in the VS menu bar.
       5. This will take us back to the VS welcome screen.  In the __Open Recent__ section, you should see __two entries__ for mysql\_webapp\_mvc; one with a folder icon and the other with a VS solution icon.  __Right-click__  on the entry __with the folder icon__ and select __Remove From List__ (we want a link to the solution, not the folder).  Now you can use the remaining link to open your VS solution for the web app.
 
-## Running/Debugging the project:
+## Running/debugging the project:
 1. __Note__: This web app utilizes HTTPS, so you will need to install/trust a security certificate the first time that you run the web app.
+
+## Helpful references:
+* [Entity Framework Core - creating/configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)
+* [Polemo Entity Framework Core - install instructions](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql)
+  * __Tools__ -> __NuGet Package Manager__ -> __Package Manager Console__

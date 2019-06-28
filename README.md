@@ -19,7 +19,8 @@ This open source project ([see license](LICENSE.txt "The GNU Affero General Publ
 ## Running/debugging the project:
 1. __Note__: This web app utilizes HTTPS, so you will need to install/trust a security certificate the first time that you run the web app.
 
-## Helpful references:
+## Helpful websites:
 * [Entity Framework Core - creating/configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)
 * [Polemo Entity Framework Core - install instructions](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql)
   * __Tools__ -> __NuGet Package Manager__ -> __Package Manager Console__
+  * [Pomelo: MySQL services configuration](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql#getting-started)

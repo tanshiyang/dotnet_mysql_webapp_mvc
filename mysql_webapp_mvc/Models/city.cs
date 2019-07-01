@@ -23,9 +23,9 @@ namespace mysql_webapp_mvc.Models
         public string CountryCode { get; set; }
         // The district or state of the city (e.g. Colorado, Arizona)
         [Required]
-        public int District { get; set; }
+        public string District { get; set; }
         // The population of the city
         [Required]
-        public string Population { get; set; }
+        public int Population { get; set; }
     }
 }

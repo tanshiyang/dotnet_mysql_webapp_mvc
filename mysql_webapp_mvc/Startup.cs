@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using mysql_webapp_mvc.Models;
 
 namespace mysql_webapp_mvc
@@ -33,11 +34,16 @@ namespace mysql_webapp_mvc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<mysql_webapp_mvcContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("mysql_webapp_mvcContext")));
+            // other service configurations go here
+            services.AddDbContextPool<mysql_webapp_mvcContext>( // replace "YourDbContext" with the class name of your DbContext
+                options => options.UseMySql(Configuration.GetConnectionString("mysql_webapp_mvcContext"), // replace with your Connection String
+                    mySqlOptions =>
+                    {
+                        mySqlOptions.ServerVersion(new Version(5, 7, 17), ServerType.MySql); // replace with your Server Version and Type
+                    }
+            ));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

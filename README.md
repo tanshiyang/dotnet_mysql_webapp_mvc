@@ -18,16 +18,6 @@ This open source project ([see license](LICENSE.txt "The GNU Affero General Publ
       3. After VS clones the project, look for a file named "mysql\_webapp\_mvc.sln" in the __Solution Explorer__ view (If the view doesn't open automatically, go to __View__ -> __Solution Explorer__ in the VS menu bar).  Right-click on the file, and select the __Open Folder in File Explorer__ option.  After File Explorer finishes opening, close the current instance of VS.
       4. Inside File Explorer, __double-click mysql\_webapp\_mvc.sln__ to import the solution (the solution file needs to be opened after a clone). After VS finishes importing the solution, click on __File__ -> __Close Solution__ in the VS menu bar.
       5. This will take us back to the VS welcome screen.  In the __Open Recent__ section, you should see __two entries__ for mysql\_webapp\_mvc; one with a folder icon and the other with a VS solution icon.  __Right-click__  on the entry __with the folder icon__ and select __Remove From List__ (we want a link to the solution, not the folder).  Now you can use the remaining link to open your VS solution for the web app.
-5. This project uses the __Pomelo.EntityFrameworkCore.MySql__ NuGet package, which may not be automatically included when the solution is imported.  To check, expand the __mysql\_webapp\_mvc__ -> __Dependencies__ -> __NuGet__ folders, and look for __Pomelo.EntityFrameworkCore.MySql__.  If it isn't listed, do the following:
-    * __macOS__:
-      1. Install latest updates for VS by clicking on __Visual Studio Community__ -> __Check for Updates...__  Projects created in VS for Windows and imported into VS for Mac can have problems runnning if you don't have the latest updates installed.
-      2. __Right-click__ on the __NuGet__ folder and select __Add Packages...__
-      3. Enter __Pomelo.EntityFrameworkCore.MySql__  inside the field with the magnifying glass icon.
-      4. Check the box next to Pomelo.EntityFrameworkCore.MySql, and click the __Add Package__ button.
-    * __Windows__:
-      1. __Right-click mysql\_webapp\_mvc__ and select __Manage NuGet Packages...__
-      2. Make sure the __Browse__ tab is selected, and enter __Pomelo.EntityFrameworkCore.MySql__  inside the field with the magnifying glass icon.
-      3. Select Pomelo.EntityFrameworkCore.MySql, and click the __Install__ button.
 
 ## Running/Debugging the Project:
 1. __Note__: This web app utilizes HTTPS, so you will need to install/trust a security certificate the first time that you run the web app.

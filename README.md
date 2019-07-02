@@ -32,7 +32,10 @@ __Note:__ This web app utilizes HTTPS, so you will need to install/trust a secur
     * __macOS__:
       1. Solutions created in VS Windows and imported into VS for Mac can have problems running correctly if VS doesn't have the latest updates installed.  To install updates, go to __Visual Studio Community__ -> __Check for Updates__ and install any available updates.
       2. In the VS menu bar click on __Run__ -> __Start Without Debugging__.
-
+    * __Windows__:
+      1. In the VS menu bar click on __Debug__ -> __Start Without Debugging__.
+2. Your default web browser should open the web application.  Accept the cookie notice, and click the __MySQL Table__ link.
+3. The webapp will query the world database for all cities and their attributes (e.g. Name, Population) and list them on the web page.  From here, it's possible to click the __edit__ link for any city and edit its attribut values.
 
 ## Helpful Websites:
 * [Entity Framework Core - creating/configuring a model](https://docs.microsoft.com/en-us/ef/core/modeling/)
